@@ -132,7 +132,7 @@ function round() {
     console.log("Deu velha!");
   }else{
     countScore(currentPlayer);
-    console.log(currentPlayer + " venceu!");
+    console.log(currentPlayer + " venceu!!");
   }
 
   showScore();
