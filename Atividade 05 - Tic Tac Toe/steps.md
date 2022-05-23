@@ -10,5 +10,5 @@ to do:
 extra:
 
 - [x] reiniciar a partida
-- [ ] selecionar simbolo no inicio da partida
+- [x] selecionar simbolo no inicio da partida
 - [x] acumular pontuaçao do vencedor
