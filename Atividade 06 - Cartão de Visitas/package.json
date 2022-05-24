@@ -1,0 +1,18 @@
+{
+  "name": "mauricio-azevedo",
+  "version": "1.0.0",
+  "description": "Meu cartão de visitas DEV",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "DEV",
+    "Mauri"
+  ],
+  "author": "Maurício Azevedo",
+  "license": "ISC",
+  "dependencies": {
+    "cli-color": "^2.0.2"
+  }
+}
