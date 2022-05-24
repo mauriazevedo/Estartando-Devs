@@ -1,8 +1,9 @@
 {
   "name": "mauricio-azevedo",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Meu cartão de visitas DEV",
   "main": "index.js",
+  "bin": "cli.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
