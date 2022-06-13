@@ -1,0 +1,62 @@
+html, body{
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #D93E30;
+    font-family: 'Karla', 'Sans-Serif';
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+p{
+    font-size: 2em;
+    margin: 0;
+    color: #212121;
+}
+
+p span{
+    color: #ffffff;
+}
+
+
+.btn{
+    font-size: 1.3em;
+    margin-top: 20px;
+    padding: 10px;
+    font-weight: 700;
+    border-radius: 10px;
+    border: 0;
+    border-bottom: 5px solid #c4a404;
+    color: #212121;
+    background-color: #f4cc04;
+}
+
+.btn:hover{
+    background-color: #c4a404;
+    color: white;
+}
+
+.container{
+    text-align: center;
+}
+
+#images #error-img{
+    width: 90%;
+    max-width: 1000px;
+}
+
+#images #rocket-team-img{
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 50%;
+    max-width: 500px;
+}

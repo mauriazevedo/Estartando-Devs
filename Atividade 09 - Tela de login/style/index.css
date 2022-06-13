@@ -1,0 +1,183 @@
+html, body{
+    margin: 0;
+}
+
+body{
+    font-family: 'Karla', 'Sans-Serif';
+    background-image: linear-gradient(#F5DB13, #F2B807);
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #F5DB13;
+    height: 40px;
+    width: 100%;
+    padding: 10px 0;
+    box-shadow: 0px 3px 21px -6px #A1A1A1;
+}
+
+#logo{
+    width: 50%;
+    margin: 88px;
+}
+
+#logo img{
+    width: 100%;
+    max-width: 100px;
+}
+
+#menu ul{
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0 88px 0 0;
+    font-size: 1.3em;
+}
+
+#menu ul a{
+    color: #212121;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+#menu ul a:hover{
+    text-decoration: underline;
+}
+
+main{
+    height: calc(100% - 87px);
+    display: flex;
+    align-items: center;
+}
+
+.left-container h1{
+    margin: 0;
+    font-size: 3em;
+    max-width: 45%;
+    font-weight: 400;
+}
+
+.left-container p{
+    max-width: 80%;
+    font-size: 1.3em;
+}
+
+.btn{
+    font-size: 1.3em;
+    padding: 10px;
+    font-weight: 700;
+    border-radius: 10px;
+    border: 0;
+    border-bottom: 5px solid #5cac64;
+    color: #212121;
+    background-color: #73D677;
+}
+
+.btn:hover{
+    background-color: #5cac64;
+    color: white;
+}
+
+.left-container{
+    flex: 1;
+    margin-left: 88px;
+}
+
+.right-container{
+    flex: 3;
+}
+
+footer p{
+    font-size: 1.3em;
+    height: 27px;
+    margin: 0 0 0 88px;
+}
+
+.mobile-photo{
+    display: none;
+}
+
+label, input{
+    display: none;    
+}
+
+@media (min-width: 0px) and (max-width: 960px){
+    #logo{
+        margin: 0;
+    }
+
+    .mobile-photo{
+        display: block;
+        width: 70%;
+        margin: 48px auto;
+    }
+
+    .desktop-photo{
+        display: none;
+    }
+    
+    .left-container h1, .left-container p{
+        text-align: center;
+        margin: 48px auto;
+        max-width: 80%;
+    }
+
+    .left-container{
+        margin: 0 auto;
+    }
+
+    main{
+        width: 100%;
+        margin: 0;
+        display: block;
+        text-align: center;
+    }
+
+    footer{
+        margin: 48px;
+    }
+
+    footer p{
+        text-align: center;
+        margin: 0;
+    }
+
+    #menu{
+        display: none;
+    }
+
+    label, input{
+        display: block;    
+    }
+
+    #hamburger{
+        display: none;
+    }
+
+    #hamburger-menu:active{
+        background-color: red;
+    }
+
+    #hamburger:checked + #menu{
+        position: fixed;
+        top: 60px;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-color: #F5DB13;
+        display: block;
+    }
+
+    #hamburger:checked + #menu ul{
+        display: block;
+        padding: 0;
+    }
+
+    #hamburger:checked + #menu ul li{
+        width: 100%;
+        padding: 20px 0;
+        text-align: center;
+    }
+}

@@ -1,0 +1,195 @@
+html, body{
+    margin: 0;
+}
+
+body{
+    font-family: 'Karla', 'Sans-Serif';
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #F5DB13;
+    height: 40px;
+    width: 100%;
+    padding: 10px 0;
+    box-shadow: 0px 3px 21px -6px #A1A1A1;
+}
+
+header label, header input{
+    display: none;    
+}
+
+h1{
+    font-weight: 400;
+    margin: 50px 0;
+    text-align: center;
+}
+
+#search-box{
+    background-color: #d0d0d0;
+    display: flex;
+    border-radius: 20px;
+    width: 80%;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+#search-box input{
+    background-color: #d0d0d0;
+    border: 0;
+    width: 100%;
+}
+
+#search-box input:focus{
+   outline: 0;
+}
+
+section{
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.pokemon-card{
+    background-color: #edecec;
+    margin-top: 20px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.pokemon-info{
+    margin: 10px;
+    display: flex;
+    justify-content: left;
+    flex-wrap: wrap;
+    align-items: center;
+    flex: 1;
+}
+
+.points{
+    margin-right: 5px;
+}
+
+.pokemon-info .points{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #212121;
+    border-radius: 50%;
+}
+
+.pokemon-info .status{
+    display: flex;
+    align-items: center;
+}
+
+.name{
+    font-weight: 800;
+}
+
+#search-box img{
+    width: 20px;
+    margin-right: 10px;
+}
+
+.pokemon-card img{
+    flex: 2;
+    width: 80%;
+}
+
+#logout-simbol{
+    width: 20px;
+}
+
+#logo{
+    width: 50%;
+    margin: 88px;
+}
+
+#logo img{
+    width: 100%;
+    max-width: 100px;
+}
+
+#menu ul{
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0 88px 0 0;
+    font-size: 1.3em;
+}
+
+#menu ul a{
+    color: #212121;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+#menu ul a:hover{
+    text-decoration: underline;
+}
+
+@media (min-width: 1650px){
+    .pokemon-card{
+        width: 30%;
+    }
+}
+
+@media (min-width: 961px) and (max-width: 1649){
+    .pokemon-card{
+        width: 40%;
+    }
+}
+
+@media (max-width: 960px){
+    #logo{
+        margin: 0;
+    }
+
+    #menu{
+        display: none;
+    }
+
+    #hamburger{
+        display: none;
+    }
+
+    #hamburger-menu:active{
+        background-color: red;
+    }
+
+    #hamburger:checked + #menu{
+        position: fixed;
+        top: 60px;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-color: #F5DB13;
+        display: block;
+    }
+
+    #hamburger:checked + #menu ul{
+        display: block;
+        padding: 0;
+    }
+
+    #hamburger:checked + #menu ul li{
+        width: 100%;
+        padding: 20px 0;
+        text-align: center;
+    }
+
+    label{
+        display: block !important;    
+    }
+
+    .pokemon-card{
+        width: 80%;
+    }
+}

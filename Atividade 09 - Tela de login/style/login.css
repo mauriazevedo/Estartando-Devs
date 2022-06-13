@@ -1,0 +1,93 @@
+html, body{
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    font-family: 'Karla', 'Sans-Serif';
+}
+
+main{
+    display: flex;
+}
+
+form{
+    border: 1px solid #212121;
+    border-radius: 5px;
+    padding: 50px 30px;
+    width: 100%;
+}
+
+input{
+    height: 30px;
+    font-family: 'Karla', 'Sans-Serif';
+    border: 0;
+}
+
+input:focus{
+    outline: 0;
+}
+
+input[type="submit"]{
+    height: auto;
+    font-size: 1.3em;
+    margin-top: 20px;
+    padding: 10px;
+    font-weight: 700;
+    border-radius: 10px;
+    border: 0;
+    border-bottom: 5px solid #c4a404;
+    color: #212121;
+    background-color: #f4cc04;
+}
+
+input[type="submit"]:hover{
+    background-color: #c4a404;
+    color: white;
+}
+
+.input{
+    display: flex;
+    border: 1px solid #212121;
+    border-radius: 5px;
+    margin: 10px 0 30px 0;
+}
+
+.input span{
+    height: 30px;
+    width: 30px;
+}
+
+#form form label, #form form input{
+    width: 100%;
+}
+
+#form{
+    display: flex;
+    width: 80%;
+}
+
+#left-container{
+    flex: 1;
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(#F5DB13, #F2B807);
+}
+
+#left-container #pokeball-img{
+    margin: auto;
+}
+
+#right-container{
+    flex: 1;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (min-width: 0px) and (max-width: 960px){
+    #left-container{
+        display: none;
+    }
+}
